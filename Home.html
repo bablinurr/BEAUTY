@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beauty</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-white font-sans">
+
+    <header class="sticky top-0 z-[100] bg-white border-b">
+        <div class="max-w-3xl mx-auto px-4 md:px-8 py-4 flex items-center">
+
+            <!-- Hamburger -->
+            <button id="menuBtn" class="text-2xl md:hidden order-1">
+                ☰
+            </button>
+
+            <!-- Desktop Left Nav -->
+            <nav
+                class=" mt-2 hidden md:flex items-center gap-6 uppercase text-sm font-medium tracking-wide order-1 mx-auto">
+                <a href="#" class="hover:text-gray-500">Makeup</a>
+                <a href="#" class="hover:text-gray-500">Skincare</a>
+                <a href="#" class="hover:text-gray-500">Hair</a>
+            </nav>
+
+            <!-- Logo -->
+            <h1 class="ml-auto md:ml-0 md:mx-auto text-3xl uppercase md:text-3xl font-bold tracking-tight order-2">
+                Beauty
+            </h1>
+
+            <!-- Desktop Right Nav -->
+            <nav class=" mt-2 hidden md:flex items-center gap-6 uppercase text-sm font-medium tracking-wide order-3">
+                <a href="#" class="hover:text-gray-500">Essentials</a>
+                <a href="#" class="hover:text-gray-500">Fragrance</a>
+                <a href="#" class="hover:text-gray-500">Baby Care</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- MOBILE SIDEBAR -->
+    <div id="sidebar" class="fixed inset-0 z-[200] hidden bg-black/40">
+
+        <!-- Side Box -->
+        <div class="bg-white w-[200px] max-w-[60%] h-auto  p-6 shadow-xl">
+
+            <!-- Close Button -->
+            <button id="closeBtn" class="text-2xl mb-10">
+                ✕
+            </button>
+
+            <!-- Nav Links -->
+            <nav class="flex flex-col gap-5 font-semibold uppercase text-sm tracking-wide hover-blue">
+                <a href="#" class="hover:text-gray-500">Makeup</a>
+                <a href="#" class="hover:text-gray-500">Skincare</a>
+                <a href="#" class="hover:text-gray-500">Hair</a>
+                <a href="#" class="hover:text-gray-500">Essentials</a>
+                <a href="#" class="hover:text-gray-500">Fragrance</a>
+                <a href="#" class="hover:text-gray-500">Baby Care</a>
+            </nav>
+
+        </div>
+    </div>
+
+    <!-- SLIDER -->
+    <main class="w-full">
+        <div class="swiper hero-swiper h-[420px] md:h-[520px]">
+
+            <div class="swiper-wrapper">
+
+                <!-- SLIDE 1 -->
+                <div class="swiper-slide">
+                    <img src="bg 1.webp" alt="Background 1" class="w-full h-full object-cover">
+                </div>
+
+                <!-- SLIDE 2 -->
+                <div class="swiper-slide relative">
+                    <img src="bg 2.png" alt="Background 2" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black/30"></div>
+                </div>
+
+            </div>
+
+            <div class="swiper-pagination hero-pagination"></div>
+        </div>
+
+        <br> <br>
+
+        <section class=" max-w-[1400px] mx-auto px-4 relative">
+            <div class="flex justify-between items-center mb-8 px-2">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-800 uppercase tracking-tight mx-auto">
+                    Peep the newest drops!
+                </h2>
+                <a href="#" class="text-sm font-bold border-b-2 border-black absolute right-6 hover:text-gray-600">View
+                    all</a>
+            </div>
+
+            <div class="swiper productSwiper pb-10">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide bg-white p-2 rounded-md transition-shadow hover:shadow-lg">
+                        <div class="relative group overflow-hidden border">
+                            <span
+                                class="absolute top-2 left-2 bg-white text-[10px] font-bold px-2 py-1 border z-10">SOLD
+                                OUT</span>
+                            <img src="product 1.webp"
+                                class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-105">
+                        </div>
+                        <div class="mt-4">
+                            <h3 class="text-sm font-medium text-gray-700 leading-tight h-10 line-clamp-2">Zayn & Myza
+                                Ultimate Vitamin C Brightness...</h3>
+                            <div class=" flex items-center gap-2">
+                                <span class="text-pink-600 font-bold text-lg">৳749</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide bg-white p-2 rounded-md transition-shadow hover:shadow-lg">
+                        <div class="relative group overflow-hidden border">
+                            <span
+                                class="absolute top-2 left-2 bg-pink-500 text-white text-[10px] font-bold px-2 py-1 z-10">-50%</span>
+                            <img src="product 2.jfif"
+                                class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-105">
+                        </div>
+                        <div class="mt-4">
+                            <h3 class="text-sm font-medium text-gray-700 line-clamp-2">Lafz Body Lotion - Shea Butter
+                                (500ml) B1G1</h3>
+                            <div class="mt-2 flex items-center gap-2">
+                                <span class="text-gray-400 line-through text-xs">৳1,398</span>
+                                <span class="text-pink-600 font-bold text-lg">৳699</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide bg-white p-2 rounded-md transition-shadow hover:shadow-lg">
+                        <div class="relative group overflow-hidden border">
+                            <span
+                                class="absolute top-2 left-2 bg-pink-500 text-white text-[10px] font-bold px-2 py-1 z-10">-50%</span>
+                            <img src="product3.jfif"
+                                class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-105">
+                        </div>
+                        <div class="mt-4">
+                            <h3 class="text-sm font-medium text-gray-700 line-clamp-2">Lafz Cocoa Butter Body Lotion
+                                250ml - B1G1</h3>
+                            <div class="mt-2 flex items-center gap-2">
+                                <span class="text-gray-400 line-through text-xs">৳698</span>
+                                <span class="text-pink-600 font-bold text-lg">৳349</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide bg-white p-2 rounded-md transition-shadow hover:shadow-lg">
+                        <div class="relative group overflow-hidden border">
+                            <span
+                                class="absolute top-2 left-2 bg-pink-500 text-white text-[10px] font-bold px-2 py-1 z-10">-34%</span>
+                            <img src="product4.jfif"
+                                class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-105">
+                        </div>
+                        <div class="mt-4">
+                            <h3 class="text-sm font-medium text-gray-700 line-clamp-2">Vaseline Intensive Care Cocoa
+                                Glow Body...</h3>
+                            <div class="mt-2 flex items-center gap-2">
+                                <span class="text-gray-400 line-through text-xs">৳900</span>
+                                <span class="text-pink-600 font-bold text-lg">৳599</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide bg-white p-2 rounded-md transition-shadow hover:shadow-lg">
+                        <div class="relative group overflow-hidden border">
+                            <img src="product5.jfif"
+                                class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-105">
+                        </div>
+                        <div class="mt-4">
+                            <h3 class="text-sm font-medium text-gray-700 line-clamp-2">Premium Beauty Care Kit</h3>
+                            <div class="mt-2 flex items-center gap-2">
+                                <span class="text-pink-600 font-bold text-lg">৳850</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </section>
+
+        <section class="bg-white py-12">
+            <div class="max-w-[1200px] mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-10 uppercase tracking-tight">
+                    Trending Category
+                </h2>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+                    <a href="/mens-grooming"
+                        class="category-card relative block overflow-hidden rounded-[2rem] h-[400px] group">
+                        <img src="https://images.unsplash.com/photo-1503443207922-dff7d543fd0e?q=80&w=1000&auto=format&fit=crop"
+                            alt="Mens Grooming" class="w-full h-full object-cover transition-transform duration-500">
+                        <div class="category-overlay absolute inset-0 flex items-end p-8">
+                            <span class="text-white font-bold text-xl uppercase tracking-wider group-hover:underline">
+                                Mens Grooming
+                            </span>
+                        </div>
+                    </a>
+
+                    <a href="/korean-beauty"
+                        class="category-card relative block overflow-hidden rounded-[2rem] h-[400px] group">
+                        <img src="https://images.unsplash.com/photo-1596704017254-9b121068fb31?q=80&w=1000&auto=format&fit=crop"
+                            alt="Korean Beauty" class="w-full h-full object-cover transition-transform duration-500">
+                        <div class="category-overlay absolute inset-0 flex items-end p-8">
+                            <span class="text-white font-bold text-xl uppercase tracking-wider group-hover:underline">
+                                Korean Beauty
+                            </span>
+                        </div>
+                    </a>
+
+                    <a href="/baby-care"
+                        class="category-card relative block overflow-hidden rounded-[2rem] h-[400px] group">
+                        <img src="https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?q=80&w=1000&auto=format&fit=crop"
+                            alt="Baby Care" class="w-full h-full object-cover transition-transform duration-500">
+                        <div class="category-overlay absolute inset-0 flex items-end p-8">
+                            <span class="text-white font-bold text-xl uppercase tracking-wider group-hover:underline">
+                                Baby Care
+                            </span>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-white py-12 max-w-[1400px] mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-10 uppercase tracking-tighter">
+                Recent Drops
+            </h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+
+                <div class="flex flex-col items-center">
+                    <a href="#"
+                        class="brand-card relative block w-full aspect-[16/10] overflow-hidden rounded-2xl group">
+                        <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?q=80&w=800" alt="Skin Cafe"
+                            class="w-full h-full object-cover transition-transform duration-500">
+                        <div class="brand-overlay absolute inset-0 flex items-center justify-center">
+                            <h3
+                                class="text-white text-4xl md:text-5xl font-serif italic drop-shadow-lg opacity-90 group-hover:opacity-100 transition-opacity">
+                                Skin Cafe</h3>
+                        </div>
+                    </a>
+                    <p class="mt-4 font-bold text-gray-700 uppercase tracking-widest text-sm md:text-base">Up to 30% OFF
+                    </p>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <a href="#"
+                        class="brand-card relative block w-full aspect-[16/10] overflow-hidden rounded-2xl group">
+                        <img src="https://images.unsplash.com/photo-1612817288484-6f916006741a?q=80&w=800" alt="Ribana"
+                            class="w-full h-full object-cover transition-transform duration-500">
+                        <div class="brand-overlay absolute inset-0 flex items-center justify-center">
+                            <span
+                                class="text-white border-4 border-white p-2 text-3xl font-bold uppercase tracking-widest">Ribana</span>
+                        </div>
+                    </a>
+                    <p class="mt-4 font-bold text-gray-700 uppercase tracking-widest text-sm md:text-base">Up to 15% OFF
+                    </p>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <a href="#"
+                        class="brand-card relative block w-full aspect-[16/10] overflow-hidden rounded-2xl group">
+                        <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=800" alt="Freyias"
+                            class="w-full h-full object-cover transition-transform duration-500">
+                        <div class="brand-overlay absolute inset-0 flex items-center justify-center">
+                            <h3 class="text-white text-5xl font-light tracking-tighter">freyia's</h3>
+                        </div>
+                    </a>
+                    <p class="mt-4 font-bold text-gray-700 uppercase tracking-widest text-sm md:text-base">Up to 65% OFF
+                    </p>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <a href="#"
+                        class="brand-card relative block w-full aspect-[16/10] overflow-hidden rounded-2xl group">
+                        <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=800"
+                            alt="Pinkflash" class="w-full h-full object-cover transition-transform duration-500">
+                        <div class="brand-overlay absolute inset-0 flex items-center justify-center">
+                            <h3
+                                class="text-white text-4xl font-black italic tracking-tight uppercase group-hover:scale-110 transition-transform">
+                                Pinkflash</h3>
+                        </div>
+                    </a>
+                    <p class="mt-4 font-bold text-gray-700 uppercase tracking-widest text-sm md:text-base">Up to 40% OFF
+                    </p>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <a href="#"
+                        class="brand-card relative block w-full aspect-[16/10] overflow-hidden rounded-2xl group">
+                        <img src="vaslin.avif" alt="Vaseline"
+                            class="w-full h-full object-cover transition-transform duration-500">
+                        <div class="brand-overlay absolute inset-0 flex items-center justify-center">
+                            <div class="bg-blue-800/80 px-6 py-2 rounded-full border-2 border-white">
+                                <span class="text-white text-2xl font-bold italic">Vaseline</span>
+                            </div>
+                        </div>
+                    </a>
+                    <p class="mt-4 font-bold text-gray-700 uppercase tracking-widest text-sm md:text-base">New Arrivals
+                    </p>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <a href="#"
+                        class="brand-card relative block w-full aspect-[16/10] overflow-hidden rounded-2xl group">
+                        <img src="cerave.jpg" alt="CeraVe"
+                            class="w-full h-full object-cover transition-transform duration-500">
+                        <div class="brand-overlay absolute inset-0 flex items-center justify-center">
+                            <h3 class="text-blue-600 bg-white/90 px-4 py-1 text-4xl font-black tracking-tighter">CeraVe
+                            </h3>
+                        </div>
+                    </a>
+                    <p class="mt-4 font-bold text-gray-700 uppercase tracking-widest text-sm md:text-base">Up to 20% OFF
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- review  -->
+        <section class="max-w-[800px] mx-auto py-16 px-4 text-center">
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-800 tracking-widest uppercase mb-10">
+                #BEAUTYBFF SPEAKS
+            </h2>
+
+            <div class="relative px-12">
+                <div class="swiper review-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"
+                            data-text="I couldn't be happier with OHSOGO. They consistently deliver 100% original products with lightning-fast delivery."
+                            data-name="Sanjida Toma">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=400"
+                                class="review-img" alt="User">
+                        </div>
+                        <div class="swiper-slide"
+                            data-text="Best shopping experience ever! The quality of skincare products is unmatched and authentic."
+                            data-name="Nusrat Jahan">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400"
+                                class="review-img" alt="User">
+                        </div>
+                        <div class="swiper-slide"
+                            data-text="Fast shipping and amazing customer support. My go-to place for all beauty needs."
+                            data-name="Farhana Akter">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=400"
+                                class="review-img" alt="User">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+            <div class="mt-8 space-y-4">
+                <div class="flex justify-center text-yellow-400 text-lg">
+                    ★★★★★
+                </div>
+                <p id="review-text"
+                    class="text-gray-600 text-lg md:text-xl font-medium leading-relaxed max-w-2xl mx-auto italic">
+                    I couldn't be happier with OHSOGO. They consistently deliver 100% original products with
+                    lightning-fast delivery.
+                </p>
+                <h4 id="review-name" class="text-gray-900 font-bold text-lg mt-4">
+                    — Sanjida Toma
+                </h4>
+            </div>
+        </section>
+
+        <!-- nav  -->
+        <script>
+            const menuBtn = document.getElementById("menuBtn");
+            const closeBtn = document.getElementById("closeBtn");
+            const sidebar = document.getElementById("sidebar");
+
+            // Hamburger click -> show sidebar
+            menuBtn.addEventListener("click", () => {
+                sidebar.classList.remove("hidden");
+            });
+
+            // Close button click -> hide sidebar
+            closeBtn.addEventListener("click", () => {
+                sidebar.classList.add("hidden");
+            });
+
+            // Optional: clicking outside sidebar closes it
+            sidebar.addEventListener("click", (e) => {
+                if (e.target === sidebar) {
+                    sidebar.classList.add("hidden");
+                }
+            });
+        </script>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+            const reviewText = document.getElementById('review-text');
+            const reviewName = document.getElementById('review-name');
+
+            const swiper = new Swiper(".review-swiper", {
+                loop: true,
+                centeredSlides: true,
+                slidesPerView: 3,
+                spaceBetween: -20,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                on: {
+                    slideChange: function () {
+                        // Update text based on active slide's data attributes
+                        const activeSlide = this.slides[this.activeIndex];
+                        if (activeSlide) {
+                            reviewText.innerText = activeSlide.getAttribute('data-text');
+                            reviewName.innerText = "— " + activeSlide.getAttribute('data-name');
+                        }
+                    }
+                }
+            });
+        </script>
+
+        <script>
+            var Swiper = new Swiper(".productSwiper", {
+                slidesPerView: 2, // Mobile-e 2 ti card
+                spaceBetween: 10,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                breakpoints: {
+                    640: {
+                        slidesPerView: 2,
+                        spaceBetween: 15,
+                    },
+                    768: {
+                        slidesPerView: 3,
+                        spaceBetween: 20,
+                    },
+                    1024: {
+                        slidesPerView: 4,
+                        spaceBetween: 25,
+                    },
+                },
+            });
+        </script>
+
+        <!-- slider -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+            const heroSwiper = new Swiper(".hero-swiper", {
+                loop: true,
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: ".hero-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                slidesPerView: 1,
+                spaceBetween: 0,
+                effect: 'slide', // slide effect
+            });
+        </script>
+
+
+
+
+    </main>
+
+
+
+    <footer class="bg-white border-t pt-16 pb-8">
+        <div class="max-w-[1400px] mx-auto px-6 md:px-12">
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16 items-center">
+                <div>
+                    <h3 class="text-2xl font-black uppercase italic tracking-tighter mb-2">Join the Beauty Club</h3>
+                    <p class="text-gray-500 text-sm">Subscribe to get special offers, free giveaways, and
+                        once-in-a-lifetime deals.</p>
+                </div>
+                <div class="flex flex-col sm:flex-row gap-3">
+                    <input type="email" placeholder="Enter your email"
+                        class="flex-1 border-b-2 border-gray-200 py-3 focus:border-black outline-none transition-all">
+                    <button
+                        class="bg-black text-white px-8 py-3 font-bold uppercase text-xs tracking-widest hover:bg-gray-800 transition">Subscribe</button>
+                </div>
+            </div>
+
+            <hr class="mb-12 border-gray-100">
+
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-10 mb-16">
+
+                <div class="col-span-2 lg:col-span-1">
+                    <h1 class="text-2xl font-black tracking-tighter mb-6 uppercase">BEAUTY</h1>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-6">Your ultimate destination for authentic beauty
+                        and skincare products in Bangladesh.</p>
+                    <div class="flex space-x-4">
+                        <a href="#"
+                            class="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center hover:bg-black hover:text-white transition">FB</a>
+                        <a href="#"
+                            class="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center hover:bg-black hover:text-white transition">IN</a>
+                        <a href="#"
+                            class="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center hover:bg-black hover:text-white transition">YT</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Categories</h4>
+                    <ul class="space-y-4 flex flex-col">
+                        <a href="#" class="footer-link">Makeup</a>
+                        <a href="#" class="footer-link">Skincare</a>
+                        <a href="#" class="footer-link">Hair Care</a>
+                        <a href="#" class="footer-link">Fragrance</a>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Information</h4>
+                    <ul class="space-y-4 flex flex-col">
+                        <a href="#" class="footer-link">About Us</a>
+                        <a href="#" class="footer-link">Contact Us</a>
+                        <a href="#" class="footer-link">Store Locator</a>
+                        <a href="#" class="footer-link">Blogs</a>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Support</h4>
+                    <ul class="space-y-4 flex flex-col">
+                        <a href="#" class="footer-link">Shipping Policy</a>
+                        <a href="#" class="footer-link">Return & Refund</a>
+                        <a href="#" class="footer-link">Privacy Policy</a>
+                        <a href="#" class="footer-link">FAQ</a>
+                    </ul>
+                </div>
+
+                <div class="col-span-2 md:col-span-1">
+                    <h4 class="footer-title">Contact</h4>
+                    <p class="text-sm text-gray-500 mb-2 font-bold italic">Call us 24/7</p>
+                    <p class="text-lg font-black mb-4">+880 1234 567 890</p>
+                    <p class="text-sm text-gray-500">support@ohsogo.com</p>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-100 pt-8 flex flex-col md:flex-row justify-between items-center gap-6">
+                <p class="text-gray-400 text-xs font-medium uppercase tracking-widest">
+                    &copy; 2026 BEAUTY. All Rights Reserved.
+                </p>
+                <div class="flex items-center gap-4 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" class="h-4" alt="Paypal">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" class="h-6"
+                        alt="Mastercard">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" class="h-3"
+                        alt="Visa">
+                    <span class="font-bold text-xs">BKASH</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
